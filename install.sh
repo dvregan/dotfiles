@@ -16,9 +16,10 @@ mkdir -p "$CONFIG_DIR/nvim"
 ln -sf "$DOTFILES/nvim/init.vim" "$CONFIG_DIR/nvim/init.vim"
 
 # i3
-mkdir -p "$CONFIG_DIR/i3"
+mkdir -p "$CONFIG_DIR/i3" "$CONFIG_DIR/dunst"
 ln -sf "$DOTFILES/i3/config" "$CONFIG_DIR/i3/config"
 ln -sf "$DOTFILES/i3/i3status.conf" "$CONFIG_DIR/i3/i3status.conf"
+ln -sf "$DOTFILES/dunst/dunstrc" "$CONFIG_DIR/dunst/dunstrc"
 
 # Zsh
 ln -sf "$DOTFILES/zsh/.zshenv" "$HOME/.zshenv"

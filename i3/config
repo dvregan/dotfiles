@@ -206,3 +206,6 @@ bar {
         binding_mode        #1c1c1c #d75f5f #ffffff
     }
 }
+
+# start dunst
+exec --no-startup-id dunst
