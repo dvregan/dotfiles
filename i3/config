@@ -209,3 +209,7 @@ bar {
 
 # start dunst
 exec --no-startup-id dunst
+
+# set a random background from given folder and set a bind for it
+exec --no-startup-id feh --no-fehbg --bg-fill --randomize ~/Pictures/wallpapers/*
+bindsym $mod+Shift+w exec --no-startup-id feh --no-fehbg --bg-fill --randomize ~/Pictures/wallpapers/*

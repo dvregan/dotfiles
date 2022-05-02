@@ -8,7 +8,7 @@ Personal dotfiles for development machines.
 
 Basic colour scheme and tabbed terminal setup (i3 and URxvt).
 
-Requires: `i3-wm`, `i3status`, `dunst`, `libnotify`, `rxvt-unicode`, `dmenu`, `ttf-fira-code`, and the AUR package `urxvt-tabbedex-mina86-git`.
+Requires: `i3-wm`, `i3status`, `dunst`, `libnotify`, `feh`, `rxvt-unicode`, `dmenu`, `ttf-fira-code`, and the AUR package `urxvt-tabbedex-mina86-git`.
 
 ### i3
 
@@ -19,6 +19,7 @@ Simple configuration for i3:
 - Colour scheme
 - Status bar configuration (check CPU coretemp path is correct if using as is)
 - Configuration for `dunst`
+- Randomised backgrounds with `feh`
 
 ### Neovim
 
