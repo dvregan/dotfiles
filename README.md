@@ -24,3 +24,9 @@ Simple configuration for i3:
 Bare bones set up for now, while learning to use it.
 
 Requires: `neovim`.
+
+### Zsh
+
+Shell setup.
+
+Requires: `zsh`, [Oh My Zsh!](https://ohmyz.sh/), `xclip`, `ripgrep`, `fzf`. 
