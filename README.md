@@ -16,6 +16,8 @@ Simple configuration for i3:
 
 - Vim bindings for moving around
 - System logout, reboot, shutdown menu on `$mod+Esc`
+- Colour scheme
+- Status bar configuration (check CPU coretemp path is correct if using as is)
 
 ### Neovim
 
