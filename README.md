@@ -29,4 +29,4 @@ Requires: `neovim`.
 
 Shell setup.
 
-Requires: `zsh`, [Oh My Zsh!](https://ohmyz.sh/), `xclip`, `ripgrep`, `fzf`. 
+Requires: `zsh`, `zsh-syntax-highlighting`, [Oh My Zsh!](https://ohmyz.sh/), `xclip`, `ripgrep`, `fzf`. 

@@ -33,3 +33,6 @@ export NVM_DIR="$HOME/.nvm"
 if [ "$(tty)" = "/dev/tty1" ]; then
     pgrep i3 || exec startx
 fi
+
+# syntax highlighting (keep at end of this file!)
+ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
