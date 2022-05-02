@@ -9,6 +9,9 @@ source $ZSH/oh-my-zsh.sh
 
 # clean prompt
 prompt_context() {}
+prompt_dir() {
+    prompt_segment blue $CURRENT_FG ' %C% '
+}
 
 # clipboard aliases (requires xclip)
 if [ $(command -v "xclip") ]; then
