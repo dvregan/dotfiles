@@ -10,6 +10,13 @@ Basic colour scheme and tabbed terminal setup (i3 and URxvt).
 
 Requires: `i3-wm`, `i3status`, `rxvt-unicode`, `dmenu`, `ttf-fira-code`, and the AUR package `urxvt-tabbedex-mina86-git`.
 
+### i3
+
+Simple configuration for i3:
+
+- Vim bindings for moving around
+- System logout, reboot, shutdown menu on `$mod+Esc`
+
 ### Neovim
 
 Bare bones set up for now, while learning to use it.
