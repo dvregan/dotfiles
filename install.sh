@@ -14,3 +14,4 @@ ln -sf "$DOTFILES/nvim/init.vim" "$CONFIG_DIR/nvim/init.vim"
 
 mkdir -p "$CONFIG_DIR/i3"
 ln -sf "$DOTFILES/i3/config" "$CONFIG_DIR/i3/config"
+ln -sf "$DOTFILES/i3/i3status.conf" "$CONFIG_DIR/i3/i3status.conf"
