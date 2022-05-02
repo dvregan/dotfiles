@@ -35,4 +35,4 @@ if [ "$(tty)" = "/dev/tty1" ]; then
 fi
 
 # syntax highlighting (keep at end of this file!)
- source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
