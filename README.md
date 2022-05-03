@@ -21,6 +21,16 @@ Simple configuration for i3:
 - Configuration for `dunst`
 - Randomised backgrounds with `feh`
 
+### BSPWM
+
+Simple config for bspwm:
+
+- Mostly default configs for bspwm, sxhkd, picom
+- Slightly modified setup for polybar with a coretemp addition (requires `lm-sensors`)
+- Uses `dmenu`, `dunst`, and `feh` setup from i3
+
+NOTE: The bspwm startup script contains an `xrandr` command specific to my displays. If you use these dotfiles please check the contents and change any necessary bits that won't work for you first.
+
 ### Neovim
 
 Bare bones set up for now, while learning to use it.

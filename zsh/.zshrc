@@ -34,7 +34,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # autoboot desktop
 if [ "$(tty)" = "/dev/tty1" ]; then
-    pgrep i3 || exec startx
+    pgrep bspwm || exec startx
 fi
 
 # syntax highlighting (keep at end of this file!)
