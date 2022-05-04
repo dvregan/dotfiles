@@ -1,38 +1,38 @@
-*.foreground: #c6c6c6
-*.background: #1c1c1c
+*.foreground: #ffffff
+*.background: #262335
 *.cursorColor: #444
 
 ! black 236 238
-*.color0: #333
-*.color8: #444
+*.color0: #000000
+*.color8: #888888
 
 ! red 167
-*.color1: #d75f5f
-*.color9: #d75f5f
+*.color1: #fe4450
+*.color9: #fe4450
 
 ! green 108
-*.color2: #87af87
-*.color10: #87af87
+*.color2: #72f1b8
+*.color10: #72f1b8
 
 ! yellow 221
-*.color3: #ffd75f
-*.color11: #ffd75f
+*.color3: #f97e72
+*.color11: #fede5d
 
 ! blue 110
-*.color4: #87afd7
-*.color12: #87af87
+*.color4: #03edf9
+*.color12: #03edf9
 
 ! magenta 146
-*.color5: #afafd7
-*.color13: #afafd7
+*.color5: #ff7edb
+*.color13: #ff7edb
 
 ! cyan 75
-*.color6: #afd7ff
-*.color14: #afd7ff
+*.color6: #03edf9
+*.color14: #03edf9
 
 ! white 239 15
-*.color7: #e4e4e4
-*.color15: #fff
+*.color7: #ffffff
+*.color15: #ffffff
 
 URxvt*font: xft:Fira Code:size=9:antialias=true
 URxvt*letterSpace: -1
@@ -45,19 +45,4 @@ URxvt*saveLines: 5000
 URxvt*depth: 32
 URxvt*background: rgba:0000/0000/0200/c800
 
-URxvt*perl-ext-common: default,tabbedex
-
-URxvt.keysym.A-S-N: perl:tabbedex:new_tab
-URxvt.keysym.A-S-H: perl:tabbedex:move_tab_left
-URxvt.keysym.A-S-J: perl:tabbedex:prev_tab
-URxvt.keysym.A-S-K: perl:tabbedex:next_tab
-URxvt.keysym.A-S-L: perl:tabbedex:move_tab_right
-URxvt.keysym.A-S-R: perl:tabbedex:rename_tab
-
-URxvt*tabbedex.tabbar-fg: 15
-URxvt*tabbedex.tabbar-bg: 236
-URxvt*tabbedex.tab-fg: 110
-URxvt*tabbedex.tab-bg: 236
-
-URxvt*tabbedex.transparent: true
-URxvt*tabbedex.new-button: false
+Xft.dpi: 192

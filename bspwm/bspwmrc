@@ -3,8 +3,9 @@
 # Autostart
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
-xrandr --output HDMI-0 --primary --mode 2560x1440 --pos 2560x0 --rotate normal --output DP-0 --off --output DP-1 --off --output DP-2 --mode 2560x1440 --pos 0x0 --rotate normal --output DP-3 --off --output DP-4 --off --output DP-5 --off &
-feh --no-fehbg --bg-fill --randomize ~/Pictures/wallpapers/* &
+xrandr --fbmm 7680x2160 --output DP-2 --pos 0x0 --mode 3840x2160 --scale 1x1 \
+	--output HDMI-0 --pos 3840x0 --mode 2560x1440 --scale 1.5x1.5 --primary &
+feh --no-fehbg --bg-fill --randomize ~/Pictures/Wallpapers/* &
 dunst &
 ~/.config/polybar/launch.sh
 
@@ -12,12 +13,12 @@ bspc monitor HDMI-0 -d VI VII VIII IX X
 bspc monitor DP-2 -d I II III IV V
 
 bspc config border_width            0
-bspc config window_gap              16
+bspc config window_gap              32
 bspc config split_ratio             0.6
 
-bspc rule -a 'Brave-browser' desktop='^1'
-bspc rule -a 'VirtualBox Manager' state=floating
-bspc rule -a MPlayer desktop='^5' center=true follow=on rectangle=1280x720+640+360
+#bspc rule -a 'Brave-browser' desktop='^1'
+#bspc rule -a 'VirtualBox Manager' state=floating
+#bspc rule -a MPlayer desktop='^5' center=true follow=on rectangle=1280x720+640+360
 
 #bspc config borderless_monocle   true
 #bspc config gapless_monocle      true
