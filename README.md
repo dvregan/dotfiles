@@ -1,44 +1,19 @@
 # Dee's Dotfiles
 
-Personal dotfiles for development machines.
+## IMPORTANT - PLEASE READ FIRST!
 
-## What's included?
+This repository contains all of the configuration files for my main development machine setup. This setup includes:
 
-### X11
+- Arch Linux and Zsh - Some settings may need changing depending on distro and shell.
+- Boot process - I log in at a terminal prompt, and then the `.zshrc` automatically boots my window manager.
+- Dual, mismatched monitors - I'm currently using two 27" screens, but one is 4K HDR and the other is 2K. The X11 and window manager config reflects this.
 
-Basic colour scheme and tabbed terminal setup (i3 and URxvt).
+If you choose to use any of the scripts and config files in this repo, you do so **at you're own risk**!
+I make no guarantees that any of them will work for you.
 
-Requires: `i3-wm`, `i3status`, `dunst`, `libnotify`, `feh`, `rxvt-unicode`, `dmenu`, `ttf-fira-code`, and the AUR package `urxvt-tabbedex-mina86-git`.
+## What's Included?
 
-### i3
-
-Simple configuration for i3:
-
-- Vim bindings for moving around
-- System logout, reboot, shutdown menu on `$mod+Esc`
-- Colour scheme
-- Status bar configuration (check CPU coretemp path is correct if using as is)
-- Configuration for `dunst`
-- Randomised backgrounds with `feh`
-
-### BSPWM
-
-Simple config for bspwm:
-
-- Mostly default configs for bspwm, sxhkd, picom
-- Slightly modified setup for polybar with a coretemp addition (requires `lm-sensors`)
-- Uses `dmenu`, `dunst`, and `feh` setup from i3
-
-NOTE: The bspwm startup script contains an `xrandr` command specific to my displays. If you use these dotfiles please check the contents and change any necessary bits that won't work for you first.
-
-### Neovim
-
-Bare bones set up for now, while learning to use it.
-
-Requires: `neovim`.
-
-### Zsh
-
-Shell setup.
-
-Requires: `zsh`, `zsh-syntax-highlighting`, `xclip`, `ripgrep`, `fzf`, and [Oh My Zsh!](https://ohmyz.sh). 
+- x11 - A basic `.xinitrc` to boot bspwm, and an `.XResources` file to set up a *Synthwave '84* inspired terminal theme. Requires: `xorg`, `xorg-xinit`, `rxvt-unicode`, `ttf-fira-code`.
+- zsh - my slightly customised `zsh` and [Oh My Zsh!](https://ohmyz.sh) setup. Requires `zsh-syntax-highlighting`, `xclip`, `fzf` and `ripgrep`.
+- bspwm - My window manager of choice. Includes configs for `bspwm`, `sxhkd`, `picom`, `polybar` and `dunst`, all of which are required. Also depends on `dmenu`, `lm_sensors`, `ttf-font-awesome`, and `feh`.
+- neovim - barebones for now while I learn how to use it
