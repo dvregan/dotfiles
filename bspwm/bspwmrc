@@ -1,14 +1,16 @@
 #! /bin/sh
 
-# autostart
+# autostart "services"
 pgrep -x sxhkd > /dev/null || sxhkd &
-picom &
+pgrep -x picom > /dev/null || picom &
+pgrep -x dunst > /dev/null || dunst &
+pgrep -x mpd > /dev/null || mpd &
+~/.config/polybar/launch.sh
+
+# set desktop resolutions and wallpaper
 xrandr --fbmm 7680x2160 --output DP-2 --pos 0x0 --mode 3840x2160 --scale 1x1 \
 	--output HDMI-0 --pos 3840x0 --mode 2560x1440 --scale 1.5x1.5 --primary &
 feh --no-fehbg --bg-fill --randomize ~/Pictures/Wallpapers/* &
-dunst &
-mpd &
-~/.config/polybar/launch.sh
 
 # workspaces
 bspc monitor DP-2 -d I II III IV V
@@ -28,6 +30,7 @@ bspc config presel_feedback_color   "#fede5d"
 
 # rules
 bspc rule -a 'Brave-browser' desktop='^1'
+bspc rule -a 'Microsoft Teams - Preview' desktop='^2'
 bspc rule -a vlc desktop '^3'
 bspc rule -a *:ncmpcpp desktop='^4'
 bspc rule -a *:cava desktop='^4'
