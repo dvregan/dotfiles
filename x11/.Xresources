@@ -34,8 +34,7 @@
 *.color7: #ffffff
 *.color15: #ffffff
 
-URxvt*font: xft:Fira Code:size=9:antialias=true
-URxvt*letterSpace: -1
+URxvt*font: xft:Fira Code Retina:size=9:minspace=False, xft:DevaVu Sans:size=8, xft:Symbola
 URxvt*borderLess: false
 URxvt*externalBorder: 0
 URxvt*internalBorder: 16
