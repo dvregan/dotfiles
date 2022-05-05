@@ -15,5 +15,5 @@ I make no guarantees that any of them will work for you.
 
 - x11 - A basic `.xinitrc` to boot bspwm, and an `.XResources` file to set up a *Synthwave '84* inspired terminal theme. Requires: `xorg`, `xorg-xinit`, `rxvt-unicode`, `ttf-fira-code`.
 - zsh - my slightly customised `zsh` and [Oh My Zsh!](https://ohmyz.sh) setup. Requires `zsh-syntax-highlighting`, `xclip`, `fzf` and `ripgrep`.
-- bspwm - My window manager of choice. Includes configs for `bspwm`, `sxhkd`, `picom`, `polybar` and `dunst`, all of which are required. Also depends on `dmenu`, `lm_sensors`, `ttf-font-awesome`, and `feh`.
+- bspwm - My window manager of choice. Includes configs for `bspwm`, `sxhkd`, `picom`, `polybar` and `dunst`, all of which are required. Also depends on `dmenu`, `lm_sensors`, `ttf-font-awesome`, `feh`, and `mpd`.
 - neovim - barebones for now while I learn how to use it
