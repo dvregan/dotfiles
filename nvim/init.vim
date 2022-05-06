@@ -1,11 +1,17 @@
 " allow os clipboard
 set clipboard=unnamedplus,unnamed
 
-" disable arrow keys
+" pathogen
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
+" bindings
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+nnoremap <A-1> :NERDTreeToggle<CR>
 
 " no swap file
 set noswapfile
