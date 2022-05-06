@@ -7,16 +7,19 @@ CONFIG_DIR="$HOME/.config"
 
 cd "$DOTFILES"
 
-# X11 and zsh
-mkdir -v -p "$CONFIG_DIR/X11"
-ln -svf "$DOTFILES/x11/.Xresources" "$CONFIG_DIR/X11/.Xresources"
-ln -svf "$DOTFILES/x11/.xinitrc" "$HOME/.xinitrc"
+# create dir structure
+for dir in *; do [ -d "$dir" ] && mkdir -vp "$CONFIG_DIR/$dir"; done
+
+# X11 (the */* glob below ignores files starting with '.')
+ln -svf "$DOTFILES/X11/.Xresources" "$CONFIG_DIR/X11/.Xresources"
+ln -svf "$DOTFILES/X11/.xinitrc" "$CONFIG_DIR/X11/.xinitrc"
+
+# zsh (.zshenv still needs to be in $HOME to set ZDOTDIR)
 ln -svf "$DOTFILES/zsh/.zshenv" "$HOME/.zshenv"
-ln -svf "$DOTFILES/zsh/.zshrc" "$HOME/.zshrc"
+ln -svf "$DOTFILES/zsh/.zshrc" "$CONFIG_DIR/zsh/.zshrc"
 
 # everything else
 for file in */*; do
-    mkdir -v -p "$CONFIG_DIR/$(dirname $file)"
     ln -svf "$DOTFILES/$file" "$CONFIG_DIR/$file"
 done
 
