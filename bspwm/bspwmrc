@@ -33,8 +33,8 @@ bspc rule -a 'Brave-browser' desktop='^1' follow=on
 bspc rule -a Postman desktop='^1' follow=on
 bspc rule -a 'Microsoft Teams - Preview' desktop='^2' follow=on
 bspc rule -a vlc desktop='^3' follow=on
-bspc rule -a *:ncmpcpp desktop='^4' follow=on
-bspc rule -a *:cava desktop='^4'
+bspc rule -a *:ncmpcpp desktop='^4' state=floating rectangle=1280x1200+2320+240 follow=on
+bspc rule -a *:cava desktop='^4' state=floating rectangle=1280x448+2320+1472
 bspc rule -a calibre desktop='^5' follow=on
 bspc rule -a 'Tor Browser' desktop='^6' follow=on
 bspc rule -a transmission desktop='^6'
