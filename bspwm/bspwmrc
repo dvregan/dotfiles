@@ -38,14 +38,3 @@ bspc rule -a *:cava desktop='^4' state=floating rectangle=1280x448+2320+1472
 bspc rule -a calibre desktop='^5' follow=on
 bspc rule -a 'Tor Browser' desktop='^6' follow=on
 bspc rule -a transmission desktop='^6'
-
-#bspc rule -a 'Brave-browser' desktop='^1'
-#bspc rule -a 'VirtualBox Manager' state=floating
-#bspc rule -a MPlayer desktop='^5' center=true follow=on rectangle=1280x720+640+360
-
-#bspc rule -a qBittorrent desktop='^7' state=floating center=true rectangle=1376x625+0+0
-#bspc rule -a Gimp desktop='^8' state=floating follow=on
-#bspc rule -a Chromium desktop='^2'
-#bspc rule -a mplayer2 state=floating
-#bspc rule -a Kupfer.py focus=on
-#bspc rule -a Screenkey manage=off
