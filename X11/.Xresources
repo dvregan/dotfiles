@@ -34,7 +34,8 @@
 *.color7: #ffffff
 *.color15: #ffffff
 
-URxvt*font: xft:Fira Code Retina:size=9:minspace=False, xft:DevaVu Sans:size=8, xft:Symbola
+URxvt*font: xft:FiraCode Nerd Font Mono:style=Regular:size=9:minspace=False, xft:DevaVu Sans:size=8, xft:Symbola
+URxvt*letterSpace: -1
 URxvt*borderLess: false
 URxvt*externalBorder: 0
 URxvt*internalBorder: 16
