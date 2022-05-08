@@ -37,5 +37,10 @@ if [ "$(tty)" = "/dev/tty1" ]; then
     pgrep bspwm || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
 fi
 
+# make sure GPG agent is running
+gpgconf --launch gpg-agent
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+export GPG_TTY=$(tty)
+
 # syntax highlighting (keep at end of this file!)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
