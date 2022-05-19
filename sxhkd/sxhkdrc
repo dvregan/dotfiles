@@ -24,10 +24,15 @@ super + alt + t
     teams
 
 super + alt + d
-    torbrowser-launcher; sleep 1; transmission-qt
+    tor-browser & sleep 1; transmission-qt
 
 super + alt + m
     urxvt -name cava -e cava & sleep 0.2; urxvt -name ncmpcpp -e ncmpcpp
+
+super + alt + c
+	bspc node -p west; \
+	bspc node -o 0.7; \
+	code $(pwd)
 
 # make sxhkd reload its configuration files:
 super + Escape
