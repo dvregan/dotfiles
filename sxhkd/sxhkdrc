@@ -1,14 +1,18 @@
 # launch terminal
 super + Return
-	urxvt
+    urxvt
 
 # program launcher
 super + r
-	dmenu_run
+    rofi -show drun
+
+# emoji picker
+super + shift + e
+    rofi -show emoji
 
 # custom app shortcuts
 super + alt + o
-    urxvt -name ranger -e ranger
+    thunar
 
 super + alt + b
     brave
