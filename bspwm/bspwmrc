@@ -6,11 +6,12 @@ pgrep -x picom > /dev/null || picom &
 pgrep -x dunst > /dev/null || dunst &
 pgrep -x mpd > /dev/null || mpd &
 ~/.config/polybar/launch.sh
+ibus-daemon -drxR
 
 # set desktop resolutions and wallpaper
 xrandr --fbmm 7680x2160 --output DP-2 --pos 0x0 --mode 3840x2160 --scale 1x1 \
 	--output HDMI-0 --pos 3840x0 --mode 2560x1440 --scale 1.5x1.5 --primary &
-feh --no-fehbg --bg-fill --randomize ~/Pictures/Wallpapers/* &
+feh --no-fehbg --bg-fill --randomize ~/Pictures/Wallpaper/* &
 
 # workspaces
 bspc monitor DP-2 -d I II III IV V VI
@@ -19,7 +20,7 @@ bspc monitor HDMI-0 -d VII VIII
 # general window settings
 bspc config border_width            2
 bspc config window_gap              32
-bspc config split_ratio             0.6
+bspc config split_ratio             0.5
 bspc config focus_follows_pointer   false
 bspc config borderless_monocle      true
 

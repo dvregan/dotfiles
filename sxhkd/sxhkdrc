@@ -17,6 +17,12 @@ super + alt + o
 super + alt + b
     brave
 
+super + alt + f
+    flameshot gui
+
+super + alt + a
+    anki
+
 super + alt + y
     brave --app=https://youtube.com
 
@@ -28,11 +34,6 @@ super + alt + d
 
 super + alt + m
     urxvt -name cava -e cava & sleep 0.2; urxvt -name ncmpcpp -e ncmpcpp
-
-super + alt + c
-	bspc node -p west; \
-	bspc node -o 0.7; \
-	code $(pwd)
 
 # make sxhkd reload its configuration files:
 super + Escape
